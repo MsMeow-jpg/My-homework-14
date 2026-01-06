@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cult Layout</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    @font-face {
+      font-family: 'NeckRomancer';
+      src: url('/fonts/HellsCemetery-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'NeckRomancer', serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-light">
+
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand text-danger fw-bold" href="#">THE CULT  OF LAMB</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#cultMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="cultMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-danger" href="#">Altar</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Rituals</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Offering</a></li>
+            <li><a class="dropdown-item" href="#">Sermons</a></li>
+            <li><a class="dropdown-item" href="#">Exaltation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Disciples</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="container-fluid my-4">
+  <div class="row">
+
+    <!-- LEFT -->
+    <aside class="col-lg-3 col-md-6 mb-4 order-2 order-md-1">
+      <div id="cultSlider" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#cultSlider" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#cultSlider" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#cultSlider" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#cultSlider" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/image/lamb.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="/image/cult.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="/image/goat.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="/image/fan.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#cultSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#cultSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="col-lg-6 col-md-6 mb-4 order-1 order-md-2">
+      <div class="accordion accordion-flush" id="cultAccordion">
+
+        <div class="accordion-item bg-dark text-light">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-dark text-danger" data-bs-toggle="collapse" data-bs-target="#faith">
+              The faith of the cult is the heart of our community
+            </button>
+          </h2>
+          <div id="faith" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Welcome to a world where faith is not just a word, but a living force that pulses through the veins of every member of our cult. Here, faith is the shield and sword that protects us from darkness and opens the way to power.
+              Don’t be afraid to tremble—fear only adds to the adventure! Together, we laugh in the dark, holding hands and believing that the impossible is possible.
+              Join us and let the cult’s faith transform you into something more than just a lamb. Become part of the force that rules the world of shadows.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-dark text-light">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-danger" data-bs-toggle="collapse" data-bs-target="#rituals">
+              Dark Rituals- The Path to True Power
+            </button>
+          </h2>
+          <div id="rituals" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              In our cult, dark rituals are the key that opens the door to the unknown. They intertwine fear and faith, creating magic that can change reality.
+              These are not just actions - they are tests of spirit and will. Each rite fills the cult with the power that lives in the shadows, making us invincible.
+              Dare to step onto this path - and the darkness will reveal its secrets to you.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-dark text-light">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed bg-dark text-danger" data-bs-toggle="collapse" data-bs-target="#followers">
+              Disciples are you, only better!
+            </button>
+          </h2>
+          <div id="followers" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Hello, friend! I am your future "Lamb", and I know the secret: without disciples, a cult is just an empty song. But imagine how much power you will have in your hands if you have an entire army of believers behind you! Each new disciple is more power, more magic and more excitement.
+              Join me, and together we will create a community that is not afraid of the darkness. They will obey, believe and create miracles... or a little chaos, if you want.
+              So, don't stand aside - become a leader, gather your army, and let's take over this world together!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-4">
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/LuVAWbg4kns"
+            title="Cult of the Lamb: Doom & Shroom"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT -->
+    <aside class="col-lg-3 col-md-12 order-3 order-md-3">
+      <form class="bg-dark p-3 rounded">
+        <h5 class="text-danger mb-3">Acceptance into the Cult</h5>
+
+        <div class="mb-2">
+          <label class="form-label">Name</label>
+          <input class="form-control bg-black text-light">
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label">Age</label>
+          <input type="number" class="form-control bg-black text-light">
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label">Faith Level</label>
+          <select class="form-select bg-black text-light">
+            <option>I doubt it.</option>
+            <option>I believe.</option>
+            <option>I am a fanatic.</option>
+          </select>
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label">Offering</label>
+          <input class="form-control bg-black text-light">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Oath</label>
+          <textarea class="form-control bg-black text-light"></textarea>
+        </div>
+
+        <button class="btn btn-danger w-100 mb-2">Join the Cult</button>
+        <button class="btn btn-outline-light w-100" type="reset">Clear</button>
+      </form>
+
+      <div class="text-center my-3">
+        <button class="btn btn-danger" onclick="const m = document.getElementById('cultMusic'); m.paused ? m.play() : m.pause(); this.textContent = m.paused ? '🔇 Music is off' : '🔊 Music is on';">
+          🔊 Music is on.
+        </button>
+      </div>
+    </aside>
+
+  </div>
+</div> 
+
+<audio id="cultMusic" src="/music/01 - Praise the Lamb.mp3" loop autoplay></audio>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-center text-secondary py-3 border-top border-danger">
+  © Cult of The Lamb — All Hail the Lamb 🐑
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
